@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #f3f3f3;
+	}
+.container-fluid {
+	padding: 0;
+	}
+.container {
+    /*width: 1172px;
+	padding: 0;*/
+	}
+header {
+	background: #76c7c0;
+	/*height: 80px;*/
+	}
+.logo {
+	padding: 22px 0 0 0;
+	}
+.main-menu {
+	background: none repeat scroll 0 0 transparent;
+	border-bottom: medium none;
+	border-radius: 0;
+	border: none;
+	}
+.navbar-collapse .navbar-nav {
+	margin-top: 18px;
+	}
+.navbar-inverse .navbar-nav > li {
+	margin-left: 5px;
+	margin-right: 5px;
+	}
+.navbar-nav > li > a {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+	text-transform:uppercase;
+	}
+.navbar-nav .first a {
+	}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #61a29e;
+    color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 5px 2px #528b85;
+	}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #61a29e;
+    color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 5px 2px #528b85;
+	
+	}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+    background-color: #e8635a;
+    color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 5px 2px #e2534b
+	}
+.navbar-nav > li > .dropdown-menu {
+   	border-radius: 5px;
+    margin-top: 12px;
+	padding: 5px;
+	}
+.dropdown-menu {
+	background-color: #e3534a;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+	}
+.dropdown-menu > li > a {
+	background-color: #e6665d;
+    color: #ffffff;
+	margin-bottom: 5px;
+	border-radius: 3px;
+	padding-left: 10px;
+    }
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    background-color: #76c5bf;
+	color: #ffffff;
+	}
+.glyphicon {
+	margin-right: 5px;
+	}	
+	
+/*******************************/
+.carousel-caption {
+    bottom: 163px;
+	display: inline-block;
+	}
+.carousel-caption h1 {
+	background: #e2534b;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:48px;
+	font-family:Tahoma, Geneva, sans-serif;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 2px 5px;
+	margin: 0;
+	}
+.carousel-caption p {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	margin-top: 10px;
+	display: inline-block;
+	padding: 5px 20px;
+	clear: both;
+	}
+.left .glyphicon-chevron-left::before {
+   	content: url(../images/left_arrow.png);
+	height: 60px;
+	width: 50px;
+	
+	}
+.right .glyphicon-chevron-right::before {
+    content: url(../images/right_arrow.png);
+	height: 60px;
+	width: 50px;
+	}
+.carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left {
+    left: 8%;
+	}
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
+    right: 18%;
+	}
+.carousel-indicators {
+    bottom: -40px;
+	}	
+.carousel-indicators li {
+    background-color: #b0b8ba;
+    border: 1px solid #fff;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 0;
+    text-indent: -999px;
+    width: 60px;
+	}
+.carousel-indicators .active {
+    background-color: #e2534b;
+    height: 8px;
+    margin: 0;
+    width: 60px;
+	}
+.caption-container {
+	position: relative;
+	}
+.top-services {
+	background: #ececec;
+	padding: 20px 25px;
+	border-radius: 5px;
+	margin-top: 50px;
+	}
+.top-services h1 {
+	color:#808c8c;
+	}
+.top-services p {
+	color:#808c8c;
+	}	
+	
+	
+	
+footer {
+	background: #6ab3ac;
+	border-top: 1px solid #d8d8d8;
+	box-shadow: 0 -5px 10px -5px #ebebeb;
+	height: 60px;
+	margin: 20px 0 0;
+	}
+.footer-inner {
+	padding: 20px 0 0 0;
+	}
+footer p {
+	color: #ffffff;
+	font-size: 12px;
+	}
+.footer-logo {
+	margin-left: 10px;
+	}
+	
+@media (max-width: 992px) {
+	
+.container {
+	width: 100%;
+	}
+.carousel-caption {
+	bottom: 0!important;
+	}
+
+}
+@media (max-width: 768px) {
+	
+.navbar-collapse .navbar-nav {
+	float: none!important;  
+	}
+.navbar-inverse .navbar-nav > li {
+    margin-bottom: 8px;
+	}
+.navbar-nav .open .dropdown-menu {
+	margin-top: 5px;
+	}
+.carousel-caption {
+	bottom: 0!important;
+	}
+}
+
+@media (max-width: 640px) {
+	
+.carousel-caption {
+	bottom: -30px!important;
+	}
+}
+
+@media (max-width: 460px) {
+	
+.carousel-caption {
+	display: none!important;
+	}
+}
+
+@media (max-width: 320px) {
+.carousel-caption {
+	display: none!important;
+	}
+}
+
